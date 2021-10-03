@@ -1,0 +1,10 @@
+git status (shows what is added/needs to add)
+
+to add
+
+git add . (adds everything)
+git commit -m "some sort of message" (2nd step I guess)
+git push origin main (uploads to git I guess)
+
+cd (use to change directory to where assignments are kept)
+file location to use: D:\Documents\School\Y2S1_Fall\CPS_251\AndroidStudioProjects
