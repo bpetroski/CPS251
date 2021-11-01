@@ -18,7 +18,6 @@ class myObserver: LifecycleObserver {
     fun onResume() {
         Log.i(LOG_TAG, "onResume")
         lifeCycleHistory += "onResume was fired on " + LocalTime.now() + "\n"
-
     }
     @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
     fun onPause() {

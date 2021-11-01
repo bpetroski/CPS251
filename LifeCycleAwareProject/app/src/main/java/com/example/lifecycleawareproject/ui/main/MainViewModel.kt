@@ -8,12 +8,12 @@ import java.time.LocalTime
 class MainViewModel : ViewModel() {
 
     private var history: MutableLiveData<String> = MutableLiveData()
-
+/*
     fun updateLog(){
         history.setValue("")
     }
+*/
 
-/*
     var lifeCycleHistory = ""
 
     fun endLine():String{
@@ -29,8 +29,10 @@ class MainViewModel : ViewModel() {
         }
         return lifeCycleHistory
     }
-
-
+    fun destroy():String{
+        lifeCycleHistory += "onDestroy was fired on " + LocalTime.now() + "\n"
+        return lifeCycleHistory
+    }
 
     fun start():String{
         lifeCycleHistory += "onStart was fired on " + LocalTime.now() + "\n"
@@ -47,6 +49,6 @@ class MainViewModel : ViewModel() {
         return lifeCycleHistory
     }
 
- */
+
     // TODO: Implement the ViewModel
 }
