@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Navigation Project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imageDescription">android robot guy</string>
+    <string name="image1">Display Image 1</string>
+    <string name="image2">Display Image 2</string>
+    <string name="image3">Display Image 3</string>
+    <string name="titlePlaceholder">Title Goes Here</string>
+</resources>
