@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Documents/School/Y2S1_Fall/CPS_251/AndroidStudioProjects/contactsproject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.590625" />
+        <entry key="..\:/Documents/School/Y2S1_Fall/CPS_251/AndroidStudioProjects/contactsproject/app/src/main/res/layout/contact_card.xml" value="0.5744791666666667" />
+        <entry key="..\:/Documents/School/Y2S1_Fall/CPS_251/AndroidStudioProjects/contactsproject/app/src/main/res/layout/main_activity.xml" value="0.5744791666666667" />
+        <entry key="..\:/Documents/School/Y2S1_Fall/CPS_251/AndroidStudioProjects/contactsproject/app/src/main/res/layout/main_fragment.xml" value="0.5744791666666667" />
+        <entry key="..\:/Documents/School/Y2S1_Fall/CPS_251/AndroidStudioProjects/contactsproject/app/src/main/res/layout/product_list_item.xml" value="0.5744791666666667" />
+        <entry key="..\:/Documents/School/Y2S1_Fall/CPS_251/AndroidStudioProjects/contactsproject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.590625" />
+        <entry key="..\:/Documents/School/Y2S1_Fall/CPS_251/examples/KotlinAndroidStudio42Samples/RoomDemo/app/src/main/res/layout/contact_card.xml" value="0.5744791666666667" />
+        <entry key="..\:/Documents/School/Y2S1_Fall/CPS_251/examples/KotlinAndroidStudio42Samples/RoomDemo/app/src/main/res/layout/main_activity.xml" value="0.5744791666666667" />
+        <entry key="..\:/Documents/School/Y2S1_Fall/CPS_251/examples/KotlinAndroidStudio42Samples/RoomDemo/app/src/main/res/layout/main_fragment.xml" value="0.44157608695652173" />
+        <entry key="..\:/Documents/School/Y2S1_Fall/CPS_251/examples/KotlinAndroidStudio42Samples/RoomDemo/app/src/main/res/layout/product_list_item.xml" value="0.44157608695652173" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
