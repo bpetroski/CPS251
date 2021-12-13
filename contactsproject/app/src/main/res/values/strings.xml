@@ -8,4 +8,5 @@
     <string name="find_string">Find</string>
     <string name="asc_string">ASC</string>
     <string name="desc_string">DESC</string>
+    <string name="defaultContactID">0</string>
 </resources>

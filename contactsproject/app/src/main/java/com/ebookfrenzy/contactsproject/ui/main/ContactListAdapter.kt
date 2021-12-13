@@ -32,7 +32,7 @@ class ContactListAdapter(private val productItemLayout: Int) :
             item.text = it!![listPosition].contactName
             number.text = it!![listPosition].phoneNumber
             id.text = it!![listPosition].id.toString()
-            delete.setImageResource(android.R.drawable.ic_delete)
+            delete.setImageResource(R.drawable.ic_baseline_delete_24)
         }
 
         delete.setOnClickListener(View.OnClickListener {

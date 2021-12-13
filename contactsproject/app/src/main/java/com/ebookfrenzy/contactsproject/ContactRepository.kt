@@ -49,7 +49,13 @@ class ContactRepository(application: Application) {
 
     fun ascSortContacts(){
         coroutineScope.launch(Dispatchers.Main){
-            allContacts = contactDao?.getAscContacts()
+            searchResults.value = asyncSortASC().await()
+        }
+    }
+
+    fun descSortContacts(){
+        coroutineScope.launch(Dispatchers.Main){
+            searchResults.value = asyncSortDESC().await()
         }
     }
 
@@ -58,6 +64,17 @@ class ContactRepository(application: Application) {
 
         coroutineScope.async(Dispatchers.IO) {
             return@async contactDao?.findContact(name)
+        }
+
+    private suspend fun asyncSortASC(): Deferred<List<Contact>?> =
+
+        coroutineScope.async(Dispatchers.IO){
+            return@async contactDao?.getAscContacts()
+        }
+
+    private suspend fun asyncSortDESC(): Deferred<List<Contact>?> =
+        coroutineScope.async(Dispatchers.IO){
+            return@async contactDao?.getDescContacts()
         }
 
 }

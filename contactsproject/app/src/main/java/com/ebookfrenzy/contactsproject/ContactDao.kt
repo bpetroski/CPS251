@@ -1,6 +1,7 @@
 package com.ebookfrenzy.contactsproject
 
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
@@ -11,7 +12,7 @@ interface ContactDao {
     @Insert
     fun insertContact(contact: Contact)
 
-    @Query("SELECT * FROM contacts WHERE contactName = :name")
+    @Query("SELECT * FROM contacts WHERE contactName LIKE '%' || :name || '%'")
     fun findContact(name: String): List<Contact>
 
     @Query("DELETE FROM contacts WHERE contactId = :id")
@@ -21,8 +22,8 @@ interface ContactDao {
     fun getAllContacts(): LiveData<List<Contact>>
 
     @Query("SELECT * FROM contacts ORDER BY contactName ASC")
-    fun getAscContacts(): LiveData<List<Contact>>
+    fun getAscContacts(): List<Contact>
 
     @Query("SELECT * FROM contacts ORDER BY contactName DESC")
-    fun getDescContacts(): LiveData<List<Contact>>
+    fun getDescContacts(): List<Contact>
 }

@@ -12,6 +12,7 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ebookfrenzy.contactsproject.Contact
 import androidx.fragment.app.viewModels
+import com.ebookfrenzy.contactsproject.MainActivity
 
 import java.util.*
 
@@ -62,11 +63,8 @@ class MainFragment : Fragment() {
         }
 
         binding.findButton.setOnClickListener { viewModel.findContact(binding.contactName.text.toString()) }
-
-        binding.ascButton.setOnClickListener {
-            viewModel.ascSortContacts()
-
-        }
+        binding.ascButton.setOnClickListener { viewModel.ascSortContacts() }
+        binding.descButton.setOnClickListener { viewModel.descSortContacts() }
     }
 
     private fun observerSetup() {
@@ -81,11 +79,10 @@ class MainFragment : Fragment() {
 
             contacts?.let {
                 if (it.isNotEmpty()) {
-
-                    binding.contactName.setText(it[0].contactName)
-                    binding.phoneNumber.setText(it[0].phoneNumber)
+                    adapter?.setContactList(it)
                 } else {
-                    Toast.makeText(context, "No Match Found", Toast.LENGTH_LONG)
+                    /*(activity as MainActivity?)!!.showToast("There are no contacts that match your search.")*/
+                    Toast.makeText(context, "No Match Found", Toast.LENGTH_LONG).show()
                 }
             }
         })

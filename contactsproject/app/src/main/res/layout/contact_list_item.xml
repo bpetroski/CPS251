@@ -23,22 +23,24 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginEnd="16dp"
+            android:contentDescription="@android:string/unknownName"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            android:contentDescription="@android:string/unknownName"
-            tools:srcCompat="@android:drawable/ic_delete" />
+            tools:ignore="ImageContrastCheck"
+            tools:srcCompat="@drawable/ic_baseline_delete_24" />
 
         <TextView
             android:id="@+id/contactID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
-            android:visibility="visible"
+            android:text="@string/defaultContactID"
+            android:visibility="invisible"
             app:layout_constraintEnd_toStartOf="@id/trashCan"
             app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck"
             tools:visibility="visible" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -52,15 +54,16 @@
             android:id="@+id/contact_row"
             android:layout_width="match_parent"
             android:layout_height="25dp"
-            android:textSize="20dp"
-            android:text="TextView" />
+            android:text="@string/contact_name"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/phoneNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15dp"
-            android:text="TextView" />
+            android:text="@string/phone_number"
+            android:textSize="15sp"
+            tools:ignore="TextContrastCheck" />
 
     </LinearLayout>
 
